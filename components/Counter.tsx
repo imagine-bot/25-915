@@ -29,7 +29,7 @@ export default function Counter() {
           {Array.from({ length: count }, (_, i) => (
             <tr key={i}>
               <td className="border px-4 py-2">{i + 1}</td>
-              <td className="border px-4 py-2">{new Date().toLocaleDateString()}</td>
+              <td className="border px-4 py-2">{new Date().toLocaleString()}</td>
             </tr>
           ))}
         </tbody>
