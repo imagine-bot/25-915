@@ -1,7 +1,13 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import axios from 'axios'
 
 export default function Counter() {
   const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    axios.post('/api/updateCount', { count })
+      .catch(error => console.error(error))
+  }, [count])
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
