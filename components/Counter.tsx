@@ -12,12 +12,20 @@ export default function Counter() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <h2 className="text-2xl mb-4">Counter: {count}</h2>
-      <button
-        className="px-4 py-2 bg-blue-500 text-white rounded"
-        onClick={() => setCount(count + 1)}
-      >
-        Increment
-      </button>
+      <div className="flex space-x-4">
+        <button
+          className="px-4 py-2 bg-blue-500 text-white rounded"
+          onClick={() => setCount(count + 1)}
+        >
+          Increment
+        </button>
+        <button
+          className="px-4 py-2 bg-red-500 text-white rounded"
+          onClick={() => setCount(count - 1)}
+        >
+          Decrement
+        </button>
+      </div>
       <table className="mt-4">
         <thead>
           <tr>
