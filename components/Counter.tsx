@@ -23,6 +23,7 @@ export default function Counter() {
           <tr>
             <th className="px-4 py-2">Row</th>
             <th className="px-4 py-2">Column</th>
+            <th className="px-4 py-2">Input</th>
           </tr>
         </thead>
         <tbody>
@@ -30,6 +31,9 @@ export default function Counter() {
             <tr key={i}>
               <td className="border px-4 py-2">{i + 1}</td>
               <td className="border px-4 py-2">{new Date().toLocaleString()}</td>
+              <td className="border px-4 py-2">
+                <input type="text" className="border rounded px-2 py-1" />
+              </td>
             </tr>
           ))}
         </tbody>
