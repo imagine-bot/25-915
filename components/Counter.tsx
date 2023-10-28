@@ -25,6 +25,12 @@ export default function Counter() {
         >
           Decrement
         </button>
+        <button
+          className="px-4 py-2 bg-green-500 text-white rounded"
+          onClick={() => setCount(0)}
+        >
+          Reset to Zero
+        </button>
       </div>
       <table className="mt-4">
         <thead>
